@@ -118,20 +118,19 @@ export default function Home() {
           )}
         </div>
         {loaded && instanceRef.current && (
-          <div className="dots">
-            {[
-              ...Array(instanceRef.current.track.details.slides.length).keys(),
-            ].map((idx) => {
-              return (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    instanceRef.current?.moveToIdx(idx)
-                  }}
-                  className={"dot" + (currentSlide === idx ? " active" : "")}
-                ></button>
-              )
-            })}
+          <div className="dots flex justify-center mt-4 space-x-2">
+            {Array.from({ length: instanceRef.current.track.details.slides.length }).map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => {
+                  instanceRef.current?.moveToIdx(idx);
+                }}
+                className={
+                  "w-3 h-3 rounded-full transition-colors " +
+                  (currentSlide === idx ? "bg-blue-600" : "bg-gray-300")
+                }
+              />
+            ))}
           </div>
         )}
       </div>
