@@ -27,7 +27,7 @@ export default function Navigation() {
       <div className="container flex h-16 items-center justify-between px-4 mx-auto">
         <Link href="/" className="flex items-center space-x-2">
           <Image src="/icon.png" alt="洋向台クリニック" width={40} height={40} unoptimized />
-          <span className="text-xl font-bold text-gray-900">水の音クリニック（試作サイト）</span>
+          <span className="text-xl font-bold text-gray-900">水の音クリニック（試作）</span>
         </Link>
 
         {/* Desktop Navigation */}
