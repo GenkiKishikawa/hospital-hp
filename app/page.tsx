@@ -141,9 +141,9 @@ export default function Home() {
             <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-100">
               地域密着型医療
             </Badge>
-            <p className="text-xl text-gray-600 font-bold mb-8 leading-relaxed">
-                洋向台クリニックでは、赤ちゃんからご高齢の方まで幅広く対応する地域医療を実践しています。
-                どうぞ、皆さまのご家庭のホームドクターとしてご活用ください。
+            <p className="text-sm sm:text-xl text-gray-600 font-bold mb-8 leading-relaxed">
+              赤ちゃんからご高齢の方まで幅広く対応する<br />
+              地域医療を実践しています。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="outline" className="text-lg px-8 py-3 bg-blue-50 text-blue-600 border-blue-600">
